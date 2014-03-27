@@ -108,7 +108,72 @@
 						<h3>openFrameworks intro</h3>
 					</section>
 					<section>
-						<p>To be continued</p>
+						<h3>Install openFrameworks</h3>
+						<p>Follow the instructions available <a href="http://openframeworks.cc/setup/raspberrypi/" target="_blank">here</a> to install openFrameworks on the Raspberry Pi.</p>
+					</section>
+					<section>
+						<h3>Get a text editor</h3>
+						<p>If you don't have your favorite text editor yet, download <a href="http://www.sublimetext.com" target="_blank">Sublime Text</a> - it is available for Mac, Linux and Windows and looks and works the same way in all three platforms.</p>
+					</section>
+					<section>
+						<h3>Download examples</h3>
+						<p>There is a Git repository <a href="https://github.com/kr15h/rpi-of-workshop-examples" target="_blank">here</a>. Click on <b>Download ZIP</b> or clone it with Git if you have it installed by using the following commands in the Terminal:</p>
+						<pre>cd /Users/your/workshop/directory
+git clone https://github.com/kr15h/rpi-of-workshop-examples.git
+cd rpi-of-workshop-examples</pre>
+					</section>
+					<section class="fragments">
+						<h3>openFrameworks overview</h3>
+						<p>As said in the openFrameworks <a href="http://openframeworks.cc" target="_blank">website</a>: </p>
+						<blockquote>openFrameworks is an open source C++ toolkit for creative coding.</blockquote>
+						<p class="fragment"><br><small>True it is...</small></p>
+					</section>
+					<section>
+						<h3>Based on C++</h3>
+						<p>openFrameworks is written in C++ and basically it is C++ with all it's pros and cons.</p>
+					</section>
+					<section>
+						<h3>Code structure</h3>
+						<p>There are two basic file types:</p>
+						<ul>
+							<li><b>.h</b><br><small>or header files</small></li>
+							<li><b>.cpp</b><br><small>or C++ files</small></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Project directory structure</h3>
+						<p>There are two main directories:</p>
+						<ul>
+							<li><b>src</b><br><small>for the source .h and .cpp files</small></li>
+							<li><b>bin</b><br><small>for the compiled program files</small></li>
+						</ul>
+					</section>
+					<section class="fragments">
+						<h3>How it works</h3>
+						<p>Just like <a href="http://www.processing.org" target="_blank">Processing</a> or <a href="http://arduino.cc" target="_blank">Arduino</a> it is all about<br>two functions for most of the time:</p>
+						<ul>
+							<li>setup()</li>
+							<li>draw()</li>
+						</ul>
+						<p class="fragment"><br><small>In Arduino there is a loop() function<br>instead of draw()</small></p>
+					</section>
+					<section>
+						<h3>Main functions</h3>
+						<p>openFrameworks has three main functions:</p>
+						<ul>
+							<li><b>setup()</b><br><small>Does the initial setup when the program starts</small></li>
+							<li><b>update()</b><br><small>Updates data, this is where to do the math</small></li>
+							<li><b>draw()</b><br><small>Draw images, videos or anything else</small></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Hands on</h3>
+						<p>Let's start with the <b>testApp</b> example to get our hands dirty and understand how it works by doing insted of talking.</p>
+						<ol>
+							<li>Open the <b>testApp</b> project directory</li>
+							<li>Go to the <b>src</b> folder</li>
+							<li>Open the <b>main.cpp</b> file</li>
+						</ol>
 					</section>
 				</section>
 
