@@ -113,7 +113,8 @@
 					</section>
 					<section>
 						<h3>Get a text editor</h3>
-						<p>If you don't have your favorite text editor yet, download <a href="http://www.sublimetext.com" target="_blank">Sublime Text</a> - it is available for Mac, Linux and Windows and looks and works the same way in all three platforms.</p>
+						<p>If you don't have your favorite text editor yet, download <a href="http://www.sublimetext.com" target="_blank">Sublime Text</a> - it is available for Mac, Linux and Windows</p>
+						<p>It looks and works the same way in all three platforms.</p>
 					</section>
 					<section>
 						<h3>Download examples</h3>
@@ -174,6 +175,57 @@ cd rpi-of-workshop-examples</pre>
 							<li>Go to the <b>src</b> folder</li>
 							<li>Open the <b>main.cpp</b> file</li>
 						</ol>
+					</section>
+					<section>
+						<h3>Get SFTP software</h3>
+						<p>To test the project, we have to upload it to the Raspberry Pi. You need to have a SFTP file browser to do that.</p>
+						<p>If you don't have your favorite yet, download <a href="https://filezilla-project.org" target="_blank">FileZilla</a>.</p>
+					</section>
+					<section>
+						<h3>Connecto to the Raspbery Pi</h3>
+						<p>Open SFTP software and make a new connection to the Raspberry Pi. My settings are:</p>
+						<ul>
+							<li><b>Address:</b> 192.168.2.200</li>
+							<li><b>Username:</b> pi</li>
+							<li><b>Password:</b> raspberry</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Upload files</h3>
+						<p>Drop the <b>testApp</b> project directory into the <code>/Users/pi/openFrameworks/apps/myApps</code> folder on the Raspberry Pi.</p>
+					</section>
+					<section>
+						<h3>Compile project</h3>
+						<p>Connect to the Raspberry Pi via SSH. 
+						<ol>
+							<li>Navigate to the project directory:<br><small><code>cd /Users/pi/openFrameworks/apps/myApps/testApp</code></small></li>
+							<li>Compile:<br><small><code>make</code></small></li>
+							<li>Run:<br><small><code>make run</code></small></li>
+						</ol>
+					</section>
+					<section>
+						<h3>Makefile</h3>
+						<p>There has to be a <b>Makefile</b> in the project folder to be able to compile the project. If it is not there, copy it from some of the default projects like <b>emptyExample</b>:</p>
+						<pre>cp ../emptyExample/Makefile ./</pre>
+					</section>
+					<section>
+						<h3>Using addons</h3>
+						<p>You need to have a <b>addons.make</b> file in your project directory. Simply enter the folder name of the addon you want to use in the file, separate multiple addons with a newline:</p>
+						<pre>ofxMidi
+ofxOsc</pre>
+					</section>
+					<section>
+						<h3>Sum-up</h3>
+						<p>The process is basically the same for almost all projects:</p>
+						<ol>
+							<li>Edit code</li>
+							<li>Upload to the Raspberry Pi</li>
+							<li>Compile and run</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Hands on</h3>
+						<p>Try out and examine code of the other examples from the workshop's Git repository.</p>
 					</section>
 				</section>
 
